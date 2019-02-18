@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "8eed620a-ad94-488c-b681-e61fd47f28e7",
+		"name": "H1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Sample Aurora",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8885e445-4f12-40bf-a2f5-a36490ca6415",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://s18devauroraproduct.assessor.rm.com/api/v1/Product/sessions",
+					"protocol": "https",
+					"host": [
+						"s18devauroraproduct",
+						"assessor",
+						"rm",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Product",
+						"sessions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Sample Aurora",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://s18devauroraproduct.assessor.rm.com/api/v1/Product/sessions",
+							"protocol": "https",
+							"host": [
+								"s18devauroraproduct",
+								"assessor",
+								"rm",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Product",
+								"sessions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Feb 2019 10:36:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"sessionId\": 9,\n        \"name\": \"N18\",\n        \"externalIdentifier\": \"D710BE46-88C5-413E-89DA-FE200CA01E5A\",\n        \"statusId\": 1,\n        \"createdBy\": null,\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"updatedBy\": null,\n        \"updatedDate\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"sessionId\": 10,\n        \"name\": \"M18\",\n        \"externalIdentifier\": \"70E29CBC-66A3-4FDB-B865-A3038E6BF85E\",\n        \"statusId\": 1,\n        \"createdBy\": null,\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"updatedBy\": null,\n        \"updatedDate\": \"0001-01-01T00:00:00\"\n    },\n    {\n        \"sessionId\": 11,\n        \"name\": \"N17\",\n        \"externalIdentifier\": \"88E64205-90CE-4D21-842F-00E4E6A7F795\",\n        \"statusId\": 1,\n        \"createdBy\": null,\n        \"createdDate\": \"0001-01-01T00:00:00\",\n        \"updatedBy\": null,\n        \"updatedDate\": \"0001-01-01T00:00:00\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
